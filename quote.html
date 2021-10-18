@@ -125,16 +125,44 @@
           <h2>Get a Quote</h2>
           <form>
           <div class="mb-5">
-            <label for="exampleFormControlTextarea1" class="form-label"
-              >Address <span class="required">*</span></label
-            >
+            <label for="exampleFormControlTextarea1" class="form-label" >Full Name <span class="required">*</span></label >
             <textarea
               class="form-control"
               id="exampleFormControlTextarea1"
               rows="3"
-              required
-            ></textarea>
+              required></textarea>
           </div>
+
+
+          <div class="mb-5">
+            <label for="exampleFormControlTextarea1" class="form-label" >Phone Number <span class="required">*</span></label >
+            <textarea
+              class="form-control"
+              id="exampleFormControlTextarea1"
+              rows="3"
+              required ></textarea>
+          </div>
+
+
+          <div class="mb-5">
+            <label for="exampleFormControlTextarea1" class="form-label" >Mail ID <span class="required">*</span></label >
+            <textarea
+              class="form-control"
+              id="exampleFormControlTextarea1"
+              rows="3"
+              required></textarea>
+          </div>
+
+
+          <div class="mb-5">
+            <label for="exampleFormControlTextarea1" class="form-label" >Address <span class="required">*</span></label >
+            <textarea
+              class="form-control"
+              id="exampleFormControlTextarea1"
+              rows="3"
+              required></textarea>
+          </div>
+
           <div class="mb-5 mt-4">
             <label class="form-label mb-3"
               >Products Required <span class="required">*</span></label
@@ -172,18 +200,19 @@
               <label class="form-check-label" for="hoodies"> Hoodies </label>
             </div>
           </div>
+
+
           <div class="mb-3 mt-4">
             <label class="form-label mb-3"
-              >Products Required <span class="required">*</span></label
+              >Quantity Required <span class="required">*</span></label
             >
             <div class="form-check">
               <input
                 class="form-check-input"
                 type="radio"
                 name="product"
-                id="roundneck"
-              />
-              <label class="form-check-label" for="roundneck"> Round Neck </label>
+                id="roundneck" />
+              <label class="form-check-label" for="roundneck"> 1-10 Units </label>
             </div>
             <div class="form-check">
               <input
@@ -191,12 +220,39 @@
                 type="radio"
                 name="product"
                 id="collar"
-                checked
-              />
-              <label class="form-check-label" for="collar"> Collat Tshirt </label>
+                checked/>
+              <label class="form-check-label" for="collar"> 10-50 Units </label>
             </div>
+            <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="product"
+                  id="collar"
+                  checked/>
+                <label class="form-check-label" for="collar"> 50-100 Units</label>
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="product"
+                  id="collar"
+                  checked/>
+                <label class="form-check-label" for="collar"> 100+ Units </label>
+              </div>
+              
           </div>
-          <button class="primary mt-5">Submit Answer</button>
+          <div class="mb-5">
+            <label for="exampleFormControlTextarea1" class="form-label" >Comments <span class="required">*</span></label >
+            <textarea
+              class="form-control"
+              id="exampleFormControlTextarea1"
+              rows="3"
+              required></textarea>
+          </div>
+          
+          <button class="primary mt-5">Submit</button>
         </form>
         </div>
       </section>
