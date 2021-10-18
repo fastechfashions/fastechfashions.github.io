@@ -295,8 +295,14 @@ footer ul li {
 }
 footer ul li a {
  color: #ffffff
- text-decoration: none;
+
 }
+
+footer ul li a :hover {
+  color: #fa0612
+  
+ }
+
 footer ul.contact {
   list-style: none;
   padding: 0;
