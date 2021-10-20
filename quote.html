@@ -61,7 +61,7 @@
                 <a class="nav-link " href="about.html">About Us</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" href="products.html">Products</a>
+                <a class="nav-link" href="products.html">Products</a>
               </li>
 
               <li class="nav-item">
@@ -72,7 +72,7 @@
               </li>
               
               <li class="nav-item">
-                <a class="nav-link" href="#contact">Contact us</a>
+                <a class="nav-link active" href="#contact">Contact us</a>
               </li>
              <!-- <li class="nav-item dropdown">
                 <a
@@ -123,44 +123,59 @@
     <section class="quote">
         <div class="container">
           <h2>Get a Quote</h2>
-          <form>
+          <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"      
+            onload="if(submitted) {window.location='sucess.html';}"> </iframe> 
+
+            <form action="https://docs.google.com/forms/u/3/d/e/1FAIpQLSe00-imzJUg0ZvL7FZClR6jKkXX67qIDbdCV2m20U3ZIBFvXA/formResponse"  method="post" target="hidden_iframe" onsubmit="submitted=true">
+
           <div class="mb-5">
             <label for="exampleFormControlTextarea1" class="form-label" >Full Name <span class="required">*</span></label >
-            <textarea
+            <input
+            name="entry.1046158753"
               class="form-control"
               id="exampleFormControlTextarea1"
               rows="1"
-              required></textarea>
+              type="text"
+              required></input>
           </div>
 
 
           <div class="mb-5">
             <label for="exampleFormControlTextarea1" class="form-label" >Phone Number <span class="required">*</span></label >
-            <textarea
+            <input
               class="form-control"
+              name="entry.671717308"
+             type="number"
               id="exampleFormControlTextarea1"
               rows="1"
-              required ></textarea>
+              required ></input>
           </div>
 
 
           <div class="mb-5">
             <label for="exampleFormControlTextarea1" class="form-label" >Mail ID <span class="required">*</span></label >
-            <textarea
-              class="form-control"
-              id="exampleFormControlTextarea1"
+            <input
               rows="1"
-              required></textarea>
+              id="exampleFormControlTextarea1"
+              class="form-control"
+              name="entry.373943920"
+                    placeholder="Email"
+                    type="email"
+                    required
+              ></input>
+              
           </div>
 
 
           <div class="mb-5">
             <label for="exampleFormControlTextarea1" class="form-label" >Address <span class="required">*</span></label >
-            <textarea
+            <input
               class="form-control"
+              name="entry.874545232"
+             type="text"
               id="exampleFormControlTextarea1"
               rows="3"
-              required></textarea>
+              required></input>
           </div>
 
           <div class="mb-5 mt-4">
@@ -170,28 +185,31 @@
             <div class="form-check mb-3">
               <input
                 class="form-check-input"
+                name="entry.1548688038"
                 type="checkbox"
-                value="roundneck"
-                id="roundneck"
+                value="Custom Shirts"
+                id="Custom Shirts"
                 checked
               />
               <label class="form-check-label" for="roundneck">
-                Round Neck Tshirt
+                Custom Shirts
               </label>
             </div>
             <div class="form-check mb-3">
               <input
+              name="entry.1548688038"
                 class="form-check-input"
                 type="checkbox"
-                value="collartshirt"
+                value="School Uniform"
                 id="collartshirt"
               />
               <label class="form-check-label" for="collartshirt">
-                Collar Tshirt
+                School Uniform
               </label>
             </div>
             <div class="form-check mb-3">
               <input
+              name="entry.373943920"
                 class="form-check-input"
                 type="checkbox"
                 value="hoodies"
@@ -208,6 +226,7 @@
             >
             <div class="form-check">
               <input
+              name="entry.1400710643"
                 class="form-check-input"
                 type="radio"
                 name="product"
@@ -216,6 +235,7 @@
             </div>
             <div class="form-check">
               <input
+              name="entry.1400710643"
                 class="form-check-input"
                 type="radio"
                 name="product"
@@ -225,18 +245,21 @@
             </div>
             <div class="form-check">
                 <input
+                name="entry.1400710643"
                   class="form-check-input"
                   type="radio"
                   name="product"
                   id="collar"
                   checked/>
                 <label class="form-check-label" for="collar"> 50-100 Units</label>
-              </div>
+            </div>
               <div class="form-check">
                 <input
+                name="entry.1400710643"
                   class="form-check-input"
                   type="radio"
                   name="product"
+                  value="100+ Units"
                   id="collar"
                   checked/>
                 <label class="form-check-label" for="collar"> 100+ Units </label>
@@ -244,12 +267,13 @@
               
           </div>
           <div class="mb-5">
-            <label for="exampleFormControlTextarea1" class="form-label" >Comments <span class="required">*</span></label >
+            <label for="exampleFormControlTextarea1" class="form-label" >Comments </label >
             <textarea
+            name="entry.1063531897"
               class="form-control"
               id="exampleFormControlTextarea1"
               rows="5"
-              required></textarea>
+              ></textarea>
           </div>
           
           <button class="primary mt-5">Get your Quote</button>
